@@ -1,9 +1,9 @@
 var wordList = [
- "jermone",
- "neena",
- "darion",
- "lou",
- "greg"
+ "Bart",
+ "Homer",
+ "Marge",
+ "Lisa",
+ "Grandpa"
 ]
 
 var chosenWord = "";
@@ -118,11 +118,6 @@ function roundComplete(){
         startGame();
     }
 
-
-
-
-
-
 }
 startGame();
 document.onkeyup = function(event){
@@ -134,6 +129,4 @@ document.onkeyup = function(event){
     console.log("this is the letter we typed", letterGuessed)
     checkLetters(letterGuessed)
     roundComplete();
-
-
 }
