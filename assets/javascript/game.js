@@ -1,5 +1,5 @@
 var wordList = [
- "bart", "homer", "marge", "lisa", "grandpa", "barney", "beeguy", "brockman", "burns", "edna", "krusty", "lenny", "martin", "mcbain", "milhouse", "moe", "flanders", "nelson", "quimby", "ralph", "skinner", "todd", "wiggum", "willy"
+ "bart", "homer", "marge", "lisa", "grandpa", "barney", "beeguy", "brockman", "burns", "edna", "krusty", "lenny", "martin", "mcbain", "milhouse", "moe", "flanders", "nelson", "quimby", "ralph", "skinner", "todd", "wiggum", "willy", "smithers", "lovejoy", "luann", "apu"
 ]
 
 var chosenWord = "";
@@ -104,13 +104,13 @@ function roundComplete(){
     console.log(blanksAndSuccesses);
     if(lettersInChosenWord.join(" ") === blanksAndSuccesses.join(" ")){
         winCounter++;
-        alert("You win!!");
+        alert("It's " + chosenWord + " , you win!!");
         document.getElementById('win-counter').innerHTML = winCounter;
         startGame();
     }else if(numGuesses === 0){
         document.getElementById('loss-counter').innerHTML  = lossCounter ++;
         document.getElementById('wrong-guesses').innerHTML = "";
-        alert("you don't have any more guesses");        
+        alert("Sorry, you don't have any more guesses.");        
         startGame();
     }
 

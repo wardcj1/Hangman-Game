@@ -1,0 +1,33 @@
+/*Guesses Left*/
+.guesses-left{
+
+}
+
+/*Wrong Guesses*/
+.wrong-guesses{
+
+}
+
+/*Wins*/
+.win-counter{
+
+}
+
+/*Losses*/
+.loss-counter{
+
+}
+
+p {
+
+}
+
+.word-blank{
+   color: orange;
+	width: 30px;
+    height: 30px;
+    border-style: solid;
+    padding: 2px;
+    float: left;
+    margin: 2px;
+}
