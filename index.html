@@ -2,9 +2,24 @@
 <html>
 <head>
     <title>JS Hangman Game</title>
+  <!-- Bootstrap File -->
+  <link rel="stylesheet"
+  href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+  <!-- CSS file -->  
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+  <!-- JQuery -->
+  <script src="https://code.jquery.com/jquery.js"></script>
 </head>
+
 <body>
-<p>Guesses Left: <span id="guesses-left"></span></p>
+<img src="assets/images/The_Simpsons_bg_top.jpg" alt="Background-Top" id="background-top">
+<img src="assets/images/The_Simpsons_bg_left.jpg" alt="Background-Left" id="background-left">
+<img src="assets/images/The_Simpsons_bg_right.jpg" alt="Background-Right" id="background-right">
+<img src="assets/images/The_Simpsons_bg_bottom.jpg" alt="Background-Bottom" id="background-bottom">
+
+<p>Guesses Left: <span id="guesses-left" class="danger"></span></p>
 <p>Wrong Guesses: <span id="wrong-guesses"></span></p>
 <p>Wins: <span id="win-counter"></span></p>
 <p>Losses: <span id="loss-counter"></span></p>

@@ -1,9 +1,5 @@
 var wordList = [
- "jermone",
- "neena",
- "darion",
- "lou",
- "greg"
+ "bart", "homer", "marge", "lisa", "grandpa", "barney", "beeguy", "brockman", "burns", "edna", "krusty", "lenny", "martin", "mcbain", "milhouse", "moe", "flanders", "nelson", "quimby", "ralph", "skinner", "todd", "wiggum", "willy", "smithers", "lovejoy", "luann", "apu"
 ]
 
 var chosenWord = "";
@@ -14,7 +10,7 @@ var wrongGuesses = [];
 
 var winCounter = 0;
 var lossCounter = 1;
-var numGuesses = 9;
+var numGuesses = 7;
 
 function startGame(){
 /*
@@ -22,12 +18,12 @@ function startGame(){
 2. want to break up that random word into letters and replace them with
 underscores x
 3. we want to add those underscores to the HTML 
-4. numguesses always equals 9, and blankandsuccess is an empty array, 
+4. numguesses always equals 7, and blankandsuccess is an empty array, 
 and wronggueses is empty as well x
 */
 wrongGuesses = [];
 console.log("this is wrong guesses in  startGame", wrongGuesses);
-numGuesses = 9;
+numGuesses = 7;
 blanksAndSuccesses = [];
 
 
@@ -108,20 +104,15 @@ function roundComplete(){
     console.log(blanksAndSuccesses);
     if(lettersInChosenWord.join(" ") === blanksAndSuccesses.join(" ")){
         winCounter++;
-        alert("You win!!");
+        alert("It's " + chosenWord + " , you win!!");
         document.getElementById('win-counter').innerHTML = winCounter;
         startGame();
     }else if(numGuesses === 0){
         document.getElementById('loss-counter').innerHTML  = lossCounter ++;
         document.getElementById('wrong-guesses').innerHTML = "";
-        alert("you don't have any more guesses");        
+        alert("Sorry, you don't have any more guesses.");        
         startGame();
     }
-
-
-
-
-
 
 }
 startGame();
@@ -134,6 +125,4 @@ document.onkeyup = function(event){
     console.log("this is the letter we typed", letterGuessed)
     checkLetters(letterGuessed)
     roundComplete();
-
-
 }
