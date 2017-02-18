@@ -14,16 +14,35 @@
 </head>
 
 <body>
-<img src="assets/images/The_Simpsons_bg_top.jpg" alt="Background-Top" id="background-top">
-<img src="assets/images/The_Simpsons_bg_left.jpg" alt="Background-Left" id="background-left">
-<img src="assets/images/The_Simpsons_bg_right.jpg" alt="Background-Right" id="background-right">
-<img src="assets/images/The_Simpsons_bg_bottom.jpg" alt="Background-Bottom" id="background-bottom">
+<div class="container">
+  <div class="row">
+  	<div class="col-lg-7"></div>
+	<img src="assets/images/The_Simpsons_bg_top.jpg" alt="Background-Top" class="col-lg-5">
+  <div class="row">
+	<img src="assets/images/The_Simpsons_bg_left.jpg" alt="Background-Left" class="col-lg-1">
+	<div align="center" class="col-lg-10">
+		<img src="assets/images/The-Simpsons-header.jpg" alt="background-header" class="background-header"><br>
+		<h1>Hangman Game!<br>
+		Type a letter to reveal a character's name
+		</h1>
+		<p class="alert alert-info">Guesses Left: <span id="guesses-left"></span></p>
+		<p class="alert alert-danger">Wrong Guesses: <span id="wrong-guesses"></span></p>
+		<p class="alert alert-success">Wins: <span id="win-counter"></span></p>
+		<p class="alert alert-warning">Losses: <span id="loss-counter"></span></p>
+		<h3 id="word-blank"></h3>
+	</div>
+	<img src="assets/images/The_Simpsons_bg_right.jpg" alt="Background-Right" class="col-lg-1">
+  <div class="row">
+  <div class="col-lg-3"></div>
+	<img src="assets/images/The_Simpsons_bg_bottom.jpg" alt="Background-Bottom" class="col-lg-6">
+	<div class="col-lg-3"></div>
+		</div>
+	 </div>
+  </div>
+</div>
 
-<p>Guesses Left: <span id="guesses-left" class="danger"></span></p>
-<p>Wrong Guesses: <span id="wrong-guesses"></span></p>
-<p>Wins: <span id="win-counter"></span></p>
-<p>Losses: <span id="loss-counter"></span></p>
-<h3 id="word-blank"></h3>
+
+
 
 <script src="assets/javascript/game.js"></script>
 </body>

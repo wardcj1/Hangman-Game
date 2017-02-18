@@ -1,3 +1,14 @@
+body{
+	background-color: #d00000; 
+}
+
+.background-header {
+   padding: 5px;
+   border: 7px solid navy;
+   background-color: yellow;
+   border-radius: 25px;
+}
+
 /*Guesses Left*/
 .guesses-left{
 
@@ -19,6 +30,17 @@
 }
 
 p {
+
+}
+
+h1 {
+	font-size: 20px;
+	padding: 5px;
+   	border: 1px solid green;
+    background-color: yellow;
+    border-radius: 25px;
+    color: #d00000;
+    font-weight: 800;
 
 }
 
