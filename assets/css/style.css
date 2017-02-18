@@ -41,7 +41,16 @@ h1 {
     border-radius: 25px;
     color: #d00000;
     font-weight: 800;
+}
 
+h3 {
+	font-size: 20px;
+	padding: 5px;
+   	border: 1px solid green;
+    background-color: yellow;
+    border-radius: 25px;
+    color: #d00000;
+    font-weight: 800;
 }
 
 .word-blank{
